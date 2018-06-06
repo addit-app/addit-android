@@ -10,6 +10,7 @@ buildscript {
         // Retrofit
         // https://github.com/square/retrofit
         retrofitVersion = '2.4.0'
+
         // Retrofit rxAdapter
         // https://github.com/JakeWharton/retrofit2-rxjava2-adapter
         retrofitRxAdapter = '1.0.0'
