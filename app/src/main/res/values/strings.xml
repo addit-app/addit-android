@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Addit</string>
 
+    <!--facebookSetting-->
+    <string name="facebook_app_id">171098853557094</string>
+    <string name="fb_login_protocol_scheme">fb171098853557094</string>
+
+
     <!--Bottom Navigation Title-->
     <string name="selection_home">HOME</string>
     <string name="selection_search">SEARCH</string>
