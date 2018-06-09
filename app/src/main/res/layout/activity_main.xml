@@ -16,11 +16,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         app:itemBackground="@color/item_background_color"
-=======
-        app:itemBackground="@color/colorPrimary"
->>>>>>> b35ff5588fddec33fd2288ebc14dc10d24c9311d
         app:itemIconTint="@color/bottom_section_color"
         app:itemTextColor="@color/bottom_section_color"
         app:layout_anchor="@+id/container"
