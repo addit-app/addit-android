@@ -14,6 +14,7 @@
 
     <string name="selection_myList">MYLIST</string>
     <string name="selection_myPage">ME</string>
+    <string name="title_activity_post">PostActivity</string>
 
 
 </resources>
