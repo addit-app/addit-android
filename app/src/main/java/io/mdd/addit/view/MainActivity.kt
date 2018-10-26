@@ -7,7 +7,6 @@ import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.text.Html
 import android.util.Log
-import android.webkit.JsResult
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Button
@@ -71,15 +70,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         webView!!.init()
-//        webView!!.webChromeClient = AdditWebChromeClient(this@MainActivity)
-        webView!!.webChromeClient = object : AdditWebChromeClient(this@MainActivity){
-            override fun onJsAlert(view: WebView?, url: String?, message: String?, result: JsResult?): Boolean {
-                Log.d("test", "얼럿!!")
-                return super.onJsAlert(view, url, message, result)
-            }
-
-        }
-
+        webView!!.webChromeClient = AdditWebChromeClient(this@MainActivity)
         webView!!.loadUrl("file:///android_asset/www/index.html")
 
     }
