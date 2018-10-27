@@ -1,0 +1,53 @@
+<html>
+    <script>
+
+
+
+        if (typeof(localStorage) == 'undefined' ) {
+        
+          alert('당신의 브라우저는 HTML5 localStorage를 지원하지 않습니다. 브라우저를 업그레이드하세요.');
+        
+        } else {
+        
+          try {
+        
+         
+        
+          localStorage.setItem("1", "Hello World!"); // key-value 형식으로 저장
+        
+          localStorage.setItem("2", "Hello World!"); // key-value 형식으로 저장
+        
+          localStorage.setItem("3", "Hello World!"); // key-value 형식으로 저장
+        
+          localStorage.setItem("4", "Hello World!"); // key-value 형식으로 저장
+        
+          localStorage.setItem("5", "Hello World!"); // key-value 형식으로 저장
+        
+          localStorage.setItem("6", "Hello World!"); // key-value 형식으로 저장
+        
+        
+        
+          } catch (e) {
+        
+             if (e == QUOTA_EXCEEDED_ERR) {
+        
+               alert('할당량 초과!'); // 할당량 초과로 인하여 데이터를 저장할 수 없음
+        
+            }
+        
+          }
+        
+         
+        
+         for(var i = 1; i <= localStorage.length; i++){
+        
+                document.write(localStorage.getItem(i)+"<br><br>"); // 저장된 값 호출
+        
+         }
+        
+        }
+        
+        </script>
+        
+        
+</html>
