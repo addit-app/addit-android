@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".view.SplashActivity"
+        <activity
+            android:name=".view.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,20 +26,20 @@
         <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
             </intent-filter>
 
+        </activity>
 
+        <activity android:name=".view.PostActivity"
+            android:theme="@style/PostTheme"
+            android:windowSoftInputMode="adjustResize">
             <!-- 다른 앱에서 공유하기위한 설정 -->
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
-
                 <category android:name="android.intent.category.DEFAULT" />
-
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

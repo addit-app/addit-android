@@ -3,11 +3,11 @@ package io.mdd.addit.webkit;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.util.Log;
+import android.webkit.ConsoleMessage;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
-
-import io.mdd.addit.webkit.listener.OnWebViewListener;
 
 public class AdditWebChromeClient extends WebChromeClient {
 
@@ -19,6 +19,13 @@ public class AdditWebChromeClient extends WebChromeClient {
         this.activity = activity;
 //        this.webViewListener = listener;
     }
+
+    @Override
+    public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
+        Log.e("webLog   ", consoleMessage.message() + '\n' + consoleMessage.messageLevel() + '\n' + consoleMessage.sourceId());
+        return super.onConsoleMessage(consoleMessage);
+    }
+
 
     @Override
     public boolean onJsAlert(WebView view, String url, String message, final JsResult result) {
@@ -87,4 +94,6 @@ public class AdditWebChromeClient extends WebChromeClient {
 //            webViewListener.onProgressChanged(newProgress);
 //        }
     }
+
+
 }
