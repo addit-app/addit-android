@@ -17,7 +17,8 @@
 
     </io.mdd.addit.webkit.AdditWebview>
 
-    <Button
+
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/btn_callWebFun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,12 +26,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="웹호출"
+        android:background="@android:color/black"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintVertical_bias="0.984"
+        app:srcCompat="@drawable/baseline_add_white_48" />
 
 </android.support.constraint.ConstraintLayout>

@@ -30,6 +30,7 @@ public class AdditWebview extends WebView {
         WebSettings settings = getSettings();
         // Javascript 사용하기
         settings.setJavaScriptEnabled(true);
+        settings.setJavaScriptCanOpenWindowsAutomatically(true);
         // WebView 내장 줌 사용여부
         settings.setBuiltInZoomControls(true);
         // 화면에 맞게 WebView 사이즈를 정의
@@ -49,6 +50,8 @@ public class AdditWebview extends WebView {
 
         // 캐쉬 사용 방법을 정의
         settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
+//        settings.setUserAgentString("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36");
+
 
 
 

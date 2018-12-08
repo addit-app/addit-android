@@ -3,6 +3,8 @@ package io.mdd.addit.view;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import io.mdd.addit.R;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override

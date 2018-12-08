@@ -22,7 +22,7 @@ public class AdditWebChromeClient extends WebChromeClient {
 
     @Override
     public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
-        Log.e("webLog   ", consoleMessage.message() + '\n' + consoleMessage.messageLevel() + '\n' + consoleMessage.sourceId());
+        Log.e("webLog test  ", consoleMessage.message() + '\n' + consoleMessage.messageLevel() + '\n' + consoleMessage.sourceId());
         return super.onConsoleMessage(consoleMessage);
     }
 
